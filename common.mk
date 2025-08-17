@@ -34,6 +34,7 @@ PRODUCT_PACKAGES += \
     FrameworksResTarget \
     NcmTetheringOverlay \
     SettingsProviderResCommon \
+    SettingsResCommon \
     SystemUIResCommon \
     TelephonyResCommon \
     TelephonyResProduct \
@@ -141,6 +142,10 @@ PRODUCT_PACKAGES += \
 # Framework detect
 PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti.vendor # Needed by CNE app
+
+# GApps
+WITH_GMS := true
+TARGET_USES_MINI_GAPPS := true
 
 # GPS
 PRODUCT_PACKAGES += \
